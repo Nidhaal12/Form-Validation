@@ -1,0 +1,48 @@
+.information *{
+    width: 95%;
+   padding: 10px;
+    display: block;
+	
+}
+label{
+    font-size: 20px;
+	text-shadow: 3px 3px #111;
+    color: white;
+}
+textarea{ 
+    background-color: white;
+
+}
+.formValidation {
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	
+}
+.formValidation input{
+    border: solid 2px rgb(52, 48, 75);
+	font-family:"Comic Sans MS", cursive, sans-serif;
+    border-radius:10px;
+    background-color: white;
+    color: black;
+   
+}
+ body{
+    margin: 2% 35%;
+   background-image:url(moon.jpeg);
+   background-repeat: no-repeat;
+    background-size: cover;
+ }
+  .special{
+	height:70px;
+     border-radius:10px;
+    border: solid 2px rgb(52, 48, 75) ;
+      color: black;
+      margin-bottom: 20px;
+  }
+  .special textarea{
+      width: 95%;
+  }
+  .sub{
+     width: 100%;
+	 font-size:20px;
+	 height:50px;
+  }
