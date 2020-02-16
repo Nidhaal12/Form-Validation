@@ -46,3 +46,14 @@ textarea{
 	 font-size:20px;
 	 height:50px;
   }
+/*  edit  by Nidhal */
+.img{
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    margin-left: 83px;
+    margin-top: 25px;
+}
+#form{
+    margin-top: 168px;
+}
