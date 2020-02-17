@@ -1,18 +1,22 @@
-var nameT = document.getElementById("name");
-var lastn = document.getElementById("lastn");
-var add = document.getElementById("add");
-var email = document.getElementById("email");
-var psd = document.getElementById("psd");
-var cmnt = document.getElementById("cmnt");
-var btn = document.getElementById("btn");
-var frm = document.getElementById("frm");
-function = "use strict";
+var nameT=document.getElementById("name");
+var lastn=document.getElementById("lastn");
+var add=document.getElementById("add");
+var email=document.getElementById("email");
+var psd=document.getElementById("psd");
+var cmnt=document.getElementById("cmnt");
+var btn=document.getElementById("btn");
+var frm =document.getElementById("frm");
+"use strict";
+
+
+
 
 function fglobal(){
 /*if (empty()&&passwordValidation()&&ValidateEmail()){
     return true;
 }else return false;
 */
+
  if( empty()===true)
  
      
@@ -20,9 +24,13 @@ function fglobal(){
 
        {   ValidateEmail()}
 
+
 }
 
 }
+
+
+
 /*
 frm.addEventListener("submit",empty);
 frm.addEventListener("submit",passwordValidation);
@@ -74,9 +82,9 @@ function empty()
 
 function passwordValidation()
 {
-    if ((psd.value).length < 8)								 
+    if ((psd.value).length < 7)								 
             { 
-                alert("The password has less than 8 characters "); 
+                alert("password must has more than 8 caracters "); 
                 
                 psd.focus(); 
                 return false; 
@@ -116,3 +124,4 @@ function submitReset(){
     return ((name.value=="")&&(lastn.value=="")&&(add.value=="")&&(email.value=="")&&(psd.value=="")&&(cmnt.value==""));
 
 };
+
