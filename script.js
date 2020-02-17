@@ -11,23 +11,7 @@ var frm =document.getElementById("frm");
 
 
 
-function fglobal(){
-/*if (empty()&&passwordValidation()&&ValidateEmail()){
-    return true;
-}else return false;
-*/
 
- if( empty()===true)
- 
-     
-{    if (passwordValidation()===true)
-
-       {   ValidateEmail()}
-
-
-}
-
-}
 
 
 
@@ -35,8 +19,8 @@ function fglobal(){
 frm.addEventListener("submit",empty);
 frm.addEventListener("submit",passwordValidation);
 frm.addEventListener("submit",ValidateEmail);*/
-
-frm.addEventListener("submit",fglobal);
+//
+//frm.addEventListener("submit",fglobal);
 
 
 function empty()
@@ -124,4 +108,24 @@ function submitReset(){
     return ((name.value=="")&&(lastn.value=="")&&(add.value=="")&&(email.value=="")&&(psd.value=="")&&(cmnt.value==""));
 
 };
+function fglobal(){
+/*if (empty()&&passwordValidation()&&ValidateEmail()){
+    return true;
+}else return false;
+*/
 
+// if( empty()===true)
+// 
+//     
+//{    if (passwordValidation()===true)
+//
+//       {   ValidateEmail()}
+//
+//
+//}
+    empty();
+    ValidateEmail()
+    
+    passwordValidation()
+}
+btn.addEventListener('click' ,()=> fglobal())
