@@ -9,12 +9,6 @@ var frm =document.getElementById("frm");
 "use strict";
 
 
-
-
-
-
-
-
 /*
 frm.addEventListener("submit",empty);
 frm.addEventListener("submit",passwordValidation);
@@ -55,14 +49,34 @@ function empty()
                 alert("Please enter your password."); 
                psd.focus(); 
                 return false; 
-            }  if (cmnt.value == "")								 
+                
+          }  /* if (cmnt.value == "")								 
             { 
-                alert("Please enter your comment."); 
+               alert("Please enter your comment."); 
                 cmnt.focus(); 
                 return false; 
-            }  return true;
+            }  return true; */
+           
         };
 
+
+
+    
+    function ValidateEmail()
+    {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(email.value.match(mailformat))
+    {
+     email.focus();
+    return true;
+    }
+    else
+    {
+    alert("You have entered an invalid email address!");
+    email.focus();
+    return false;
+    }
+    };
 
 function passwordValidation()
 {
@@ -87,22 +101,6 @@ function passwordValidation()
             return false; 
           } return true;
     };
-    
-    function ValidateEmail()
-    {
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if(email.value.match(mailformat))
-    {
-     email.focus();
-    return true;
-    }
-    else
-    {
-    alert("You have entered an invalid email address!");
-    email.focus();
-    return false;
-    }
-    };
 
 function submitReset(){
     return ((name.value=="")&&(lastn.value=="")&&(add.value=="")&&(email.value=="")&&(psd.value=="")&&(cmnt.value==""));
@@ -124,8 +122,8 @@ function fglobal(){
 //
 //}
     empty();
-    ValidateEmail()
-    
+   ValidateEmail()
     passwordValidation()
+    
 }
 btn.addEventListener('click' ,()=> fglobal())
